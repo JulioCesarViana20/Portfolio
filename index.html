@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio profissional de Julio Cesar, desenvolvedor Front-End especializado em UX/UI, interfaces modernas e experiências digitais elegantes." />
+    <meta name="keywords" content="portfólio, front-end, UX/UI, desenvolvimento web, JavaScript, CSS, HTML" />
+    <meta property="og:title" content="Julio Cesar | Portfólio" />
+    <meta property="og:description" content="Portfólio moderno, elegante e responsivo com foco em experiências digitais premium." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/banner.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Julio Cesar | Portfólio</title>
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="loader__ring"></div>
+    </div>
+
+    <div class="scroll-progress" data-scroll-progress></div>
+    <button class="back-to-top" data-back-to-top aria-label="Voltar ao topo">↑</button>
+
+    <header class="site-header">
+      <a class="brand" href="#hero" aria-label="Voltar ao início">JC</a>
+
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="site-nav" class="nav-links" data-nav-links aria-label="Navegação principal">
+        <a href="#hero" class="active">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Projetos</a>
+        <a href="#experience">Experiência</a>
+        <a href="#certificates">Certificados</a>
+        <a href="#timeline">Linha do tempo</a>
+        <a href="#contact">Contato</a>
+      </nav>
+
+      <button class="theme-toggle" data-theme-toggle aria-label="Alternar tema" aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+        <span class="sr-only">Alternar tema</span>
+      </button>
+    </header>
+
+    <div class="mobile-menu-backdrop" data-mobile-backdrop aria-hidden="true"></div>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="hero__content">
+          <p class="section-label">Portfólio profissional</p>
+          <h1 id="hero-title"></h1>
+          <p id="hero-description" class="hero__description"></p>
+          <div class="hero__actions">
+            <a id="hero-resume" class="btn btn--primary" href="#">Baixar currículo</a>
+            <a class="btn btn--ghost" href="#projects">Ver projetos</a>
+          </div>
+          <div id="hero-social" class="social-links" aria-label="Redes sociais"></div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__image-frame">
+            <img id="hero-photo" alt="Foto de perfil" loading="lazy" decoding="async" />
+          </div>
+          <div class="hero__panel">
+            <h2 id="hero-panel-title"></h2>
+            <p id="hero-panel-text"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-heading">
+          <p class="section-label">Sobre mim</p>
+          <h2>Construindo experiências digitais com precisão, clareza e personalidade.</h2>
+        </div>
+        <div class="about__content">
+          <div id="about-content" class="about__text"></div>
+          <div class="about__highlights">
+            <div class="about__card">
+              <span>+3</span>
+              <p>Anos de experiência</p>
+            </div>
+            <div class="about__card">
+              <span>+3</span>
+              <p>Projetos REALMENTE profissionais entregues</p>
+            </div>
+            <div class="about__card">
+              <span>100%</span>
+              <p>Foco em performance</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-heading">
+          <p class="section-label">Habilidades</p>
+          <h2>Competências técnicas com foco em qualidade e impacto.</h2>
+        </div>
+        <div id="skills-list" class="skills-grid"></div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="section-label">Projetos</p>
+          <h2>Selecionados para mostrar visão, execução e atenção aos detalhes.</h2>
+        </div>
+        <div id="projects-grid" class="projects-grid"></div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="section-label">Experiência</p>
+          <h2>Trabalhos que reforçam uma abordagem estratégica e prática.</h2>
+        </div>
+        <div id="experience-list" class="experience-list"></div>
+      </section>
+
+      <section id="certificates" class="section">
+        <div class="section-heading">
+          <p class="section-label">Certificados</p>
+          <h2>Aprendizado contínuo em tecnologia, design e segurança.</h2>
+        </div>
+        <div id="certificates-list" class="certificates-grid"></div>
+      </section>
+
+      <section id="timeline" class="section">
+        <div class="section-heading">
+          <p class="section-label">Linha do tempo</p>
+          <h2>Uma trajetória construída com consistência e evolução contínua.</h2>
+        </div>
+        <div id="timeline-list" class="timeline"></div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-heading">
+          <p class="section-label">Contato</p>
+          <h2>Vamos criar algo excepcional juntos.</h2>
+        </div>
+        <div id="contact-list" class="contact-list"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Julio Cesar. Todos os direitos reservados.</p>
+    </footer>
+
+    <div class="image-modal" data-image-modal aria-hidden="true">
+      <button class="image-modal__close" data-image-modal-close aria-label="Fechar imagem">×</button>
+      <img class="image-modal__image" data-image-modal-image src="" alt="" />
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
