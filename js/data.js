@@ -94,7 +94,7 @@ const projects = [
   },
    {
     title: "Mario Kart on terminal",
-    description: "Um treinamento básico sobre os tipos de exportação e importação no JavaScript, buscando obter um código limpo e funcional para aplicações futuras.",
+    description: "Uma recriação do clássico Mario Kart no terminal usando JavaScript. O projeto simula corridas entre personagens com atributos únicos, colocando em prática lógica de programação, módulos e conceitos do Node.js.",
     image: "assets/images/mariokart.jpg",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
     github: "https://github.com/JulioCesarViana20/mario-kart",
