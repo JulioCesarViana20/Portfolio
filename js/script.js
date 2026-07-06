@@ -87,7 +87,7 @@ function renderHero() {
     resumeLink.remove();
   }
 
-  photo.src = profile.photo;
+  photo.setAttribute("src", profile.photo || "assets/images/profile.png");
   photo.alt = `Foto de ${profile.name}`;
   panelTitle.textContent = "Disponível para projetos especiais";
   panelText.textContent = "Criando produtos digitais com alto padrão visual e foco em resultado.";
