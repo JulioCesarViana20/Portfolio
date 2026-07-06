@@ -76,14 +76,17 @@ function renderHero() {
   const panelTitle = document.getElementById("hero-panel-title");
   const panelText = document.getElementById("hero-panel-text");
 
-  if (!title || !description || !resumeLink || !social || !photo || !panelTitle || !panelText) {
+  if (!title || !description || !social || !photo || !panelTitle || !panelText) {
     return;
   }
 
   title.textContent = `${profile.name}`;
   description.textContent = `${profile.title} — ${profile.description}`;
-  resumeLink.href = profile.resume;
-  resumeLink.setAttribute("download", "curriculo.pdf");
+
+  if (resumeLink) {
+    resumeLink.remove();
+  }
+
   photo.src = profile.photo;
   photo.alt = `Foto de ${profile.name}`;
   panelTitle.textContent = "Disponível para projetos especiais";
