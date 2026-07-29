@@ -61,7 +61,7 @@ const projects = [
     image: "assets/images/tuba.png",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
     github: "https://github.com/JulioCesarViana20/Tuba-Brasil",
-    demo: "https://juliocesarviana20.github.io/Tuba-Brasil/",
+    demo: "https://tuba-brasil.onrender.com/",
     tags: ["UI", "Landing Page", "Performance"]
   },
   {
@@ -78,7 +78,7 @@ const projects = [
     title: "ECMAjs",
     description: "Um treinamento básico sobre os tipos de exportação e importação no JavaScript, buscando obter um código limpo e funcional para aplicações futuras.",
     image: "assets/images/ecma.png",
-    technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
+    technologies: ["JavaScript", "Node.js"],
     github: "https://github.com/JulioCesarViana20/ECMAjs",
     demo: "https://github.com/JulioCesarViana20/ECMAjs",
     tags: ["Node.js", "export", "import"]
@@ -87,7 +87,7 @@ const projects = [
     title: "ModulesJavascript",
     description: "Este repositório contém módulos JavaScript projetados para melhorar a organização, a reutilização e a manutenibilidade do código. Cada módulo concentra-se em uma funcionalidade específica e pode ser facilmente integrado a diferentes projetos.",
     image: "assets/images/modules.png",
-    technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
+    technologies: ["JavaScript", "Node.js"],
     github: "https://github.com/JulioCesarViana20/ModulesJavascript",
     demo: "https://github.com/JulioCesarViana20/ModulesJavascript",
     tags: ["Node.js", "Modules", "Modularization"]
@@ -96,7 +96,7 @@ const projects = [
     title: "Mario Kart on terminal",
     description: "Uma recriação do clássico Mario Kart no terminal usando JavaScript. O projeto simula corridas entre personagens com atributos únicos, colocando em prática lógica de programação, módulos e conceitos do Node.js.",
     image: "assets/images/mariokart.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
+    technologies: [ "JavaScript", "Node.js"],
     github: "https://github.com/JulioCesarViana20/mario-kart",
     demo: "https://github.com/JulioCesarViana20/mario-kart",
     tags: ["Node.js", "Basic", "Javascript"]
